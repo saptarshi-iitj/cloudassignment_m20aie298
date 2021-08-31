@@ -34,7 +34,7 @@ def machine_classification(img, weights_file):
 uploaded_file = st.file_uploader("Pls upload an image", type="jpg")
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
-    st.image(image, caption='Uploaded MRI.', use_column_width=True)
+    st.image(image, caption='Uploaded Image', use_column_width=True)
     st.write("")
     st.write("Classifying...")
     label = machine_classification(image, 'trained_model.h5')
