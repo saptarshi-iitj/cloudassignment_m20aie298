@@ -5,7 +5,7 @@ We have trained a VGG 16 pre-trained model on Pascal VOC 2012 dataset. The initi
 
 We have inported the VGG 16 model, removed the last prediction layer and replaced it by another prediction layer for predicting 20 classes. Additionally we have trained the model for the new last layer only, and it resulted in about 71% accuracy on validation dataset.
 
-Once the model has trained, we downloaded the weights file and developed a python web app using streamlit. This app is supposed to take a jpeg image as input, preprocess it as per VGG16 architecture requirements and then classify the said image.
+Once the model has trained, we downloaded the weights file and developed a python web app using `streamlit`. This app is supposed to take a jpeg image as input, preprocess it as per VGG16 architecture requirements and then classify the said image.
 
 Then we created 2 additional files in oou working directory namely, `Dockerfile` and `requirements.txt` to further contanerize our application.
 
